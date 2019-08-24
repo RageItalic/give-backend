@@ -116,7 +116,7 @@ app.post("/sendToken", (req, res) => {
     console.log("IM HERE NOW ");
     plaidClient.createStripeToken(
       ACCESS_TOKEN,
-      "acct_1FAqcLBakQYdHUio",
+      "acct_1FB1SXDXDwEfuvRE",
       (err, res) => {
         //handle error here
         if (err) console.log("ERROR", err);
@@ -141,15 +141,6 @@ app.post("/payment", (req, res) => {
     }
   });
 });
-
-//Front-end API routes:
-app.get("users/:id/givenToday", (req, res) => {});
-
-app.post("users/:id/givenMonthly", (req, res) => {});
-
-app.post("users/:id/givenWeekly", (req, res) => {});
-
-app.post("users/:id/total", (req, res) => {});
 
 app.listen(PORT, () => {
   console.log("listening on 4000");
