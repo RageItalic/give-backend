@@ -147,7 +147,7 @@ app.get("/getUserDonations", (req, res) => {
       );
       res.send({
         totalToCharge,
-        message: "THIS AMOUNT WILL BE CHARGED TO USER"
+        message: "THIS AMOUNT WILL BE CHARGED TO USER IMMEDIATELY"
       });
       // .then(() => {
       // var totalToCharge = changeArray.reduce(
